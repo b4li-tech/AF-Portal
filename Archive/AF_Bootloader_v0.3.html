@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AF Bootloader v0.3</title>
+<style>
+body{margin:0;background:#08111f;color:#eaf4ff;font-family:Segoe UI,sans-serif}
+.wrap{max-width:1400px;margin:auto;padding:20px}
+h1{text-align:center}
+.orbit{position:relative;width:720px;height:720px;margin:20px auto}
+.ring{position:absolute;border:1px solid rgba(126,200,255,.25);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}
+.r1{width:420px;height:420px;animation:spin 30s linear infinite}
+.r2{width:620px;height:620px;animation:spin 60s linear infinite reverse}
+@keyframes spin{from{transform:translate(-50%,-50%) rotate(0)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+.center,.node{position:absolute;border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center}
+.center{width:180px;height:180px;left:50%;top:50%;transform:translate(-50%,-50%);border:2px solid #7ec8ff}
+.node{width:140px;height:140px}
+.a{left:40px;top:290px;border:2px solid #ff6b6b}
+.b{right:40px;top:290px;border:2px solid #ff6b6b}
+.c{left:290px;top:40px;border:2px solid #6bffb0}
+.hot{left:290px;bottom:40px;border:2px solid #ffb84d}
+.mirror{position:absolute;top:10px;right:10px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card{border:1px solid #2c466e;border-radius:12px;padding:12px;background:#10182d}
+textarea,input{width:100%;padding:10px;background:#0b1325;color:#fff;border:1px solid #345;border-radius:8px}
+button{padding:10px 14px;margin:4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>đźš€ AF Bootloader v0.3</h1>
+<input id="object" placeholder="đźŽŻ Obiekt Analizy">
+
+<div class="orbit">
+<div class="mirror">đźŞž Lusterka</div>
+<div class="ring r2"></div>
+<div class="ring r1"></div>
+<div class="node c">đźš€ Tor C</div>
+<div class="node a">đź› ď¸Ź Tor A</div>
+<div class="center">đźŽŻ<br>Obiekt Analizy</div>
+<div class="node b">âť¤ď¸Ź Tor B</div>
+<div class="node hot">đź”Ą Punkt GorÄ…cy</div>
+</div>
+
+<div class="grid">
+<div class="card"><h3>Tor A</h3><textarea id="a" rows="5"></textarea></div>
+<div class="card"><h3>Tor B</h3><textarea id="b" rows="5"></textarea></div>
+<div class="card"><h3>Tor C</h3><textarea id="c" rows="5"></textarea></div>
+<div class="card"><h3>Synteza</h3><textarea id="s" rows="5"></textarea></div>
+</div>
+
+<div class="card" style="margin-top:12px">
+<button onclick="save()">đź’ľ Zapisz sesjÄ™ JSON</button>
+<button onclick="load()">đź“‚ Wczytaj ostatniÄ… sesjÄ™</button>
+</div>
+
+<script>
+function save(){
+const data={
+object:document.getElementById('object').value,
+A:document.getElementById('a').value,
+B:document.getElementById('b').value,
+C:document.getElementById('c').value,
+S:document.getElementById('s').value
+};
+localStorage.setItem('AF_SESSION',JSON.stringify(data));
+alert('Sesja zapisana');
+}
+function load(){
+const raw=localStorage.getItem('AF_SESSION');
+if(!raw)return;
+const d=JSON.parse(raw);
+object.value=d.object||'';
+a.value=d.A||'';
+b.value=d.B||'';
+c.value=d.C||'';
+s.value=d.S||'';
+}
+</script>
+</div>
+</body>
+</html>

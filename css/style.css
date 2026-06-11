@@ -1,0 +1,89 @@
+body{
+    margin:0;
+    background:#0b1020;
+    color:white;
+    font-family:Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.panel{
+    width:600px;
+    text-align:center;
+    border:1px solid #2c466e;
+    border-radius:20px;
+    padding:40px;
+    background:#11182d;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+input{
+    width:80%;
+    padding:12px;
+    border-radius:10px;
+    border:none;
+    margin-top:20px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+.menu{
+    margin-top:30px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border:1px solid #2c466e;
+    border-radius:10px;
+    background:#182340;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    background:#24365f;
+}
+textarea{
+    width:90%;
+    padding:12px;
+    border-radius:10px;
+    border:none;
+    margin-top:10px;
+    resize:vertical;
+}
+
+h2{
+    margin-top:25px;
+}
+
+a{
+    color:#7ec8ff;
+    text-decoration:none;
+}
+.analysis-card{
+
+margin-top:20px;
+
+padding:15px;
+
+border:1px solid #2c466e;
+
+border-radius:10px;
+
+background:#182340;
+
+}

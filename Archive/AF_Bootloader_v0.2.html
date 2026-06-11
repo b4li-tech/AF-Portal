@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AF Bootloader v0.2</title>
+<style>
+body{
+margin:0;background:radial-gradient(circle at center,#15213f,#070b16);
+color:#eaf4ff;font-family:Segoe UI,sans-serif;
+}
+.wrap{max-width:1400px;margin:auto;padding:20px}
+.header{text-align:center;padding:20px}
+.header h1{font-size:42px}
+.orbital{
+position:relative;width:700px;height:700px;margin:20px auto;
+}
+.ring1,.ring2{
+position:absolute;border:1px solid rgba(126,200,255,.3);
+border-radius:50%;
+left:50%;top:50%;transform:translate(-50%,-50%);
+}
+.ring1{width:420px;height:420px}
+.ring2{width:620px;height:620px}
+.center,.node{
+position:absolute;border-radius:50%;
+display:flex;align-items:center;justify-content:center;
+text-align:center;
+backdrop-filter:blur(8px);
+}
+.center{
+width:180px;height:180px;
+left:50%;top:50%;transform:translate(-50%,-50%);
+border:2px solid #7ec8ff;
+}
+.node{width:140px;height:140px}
+.a{left:40px;top:280px;border:2px solid #ff6b6b}
+.b{right:40px;top:280px;border:2px solid #ff6b6b}
+.c{left:280px;top:40px;border:2px solid #6bffb0}
+.hot{left:280px;bottom:40px;border:2px solid #ffb84d}
+.mirror{
+position:absolute;top:-20px;right:0;
+padding:10px 18px;border:1px solid #8cc8ff;border-radius:10px;
+}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.card{
+border:1px solid #2c466e;border-radius:14px;padding:15px;
+background:rgba(20,30,55,.4)
+}
+textarea,input{
+width:100%;padding:10px;border-radius:8px;
+background:#10182d;color:white;border:1px solid #345;
+}
+button{
+padding:12px 18px;border:none;border-radius:10px;
+background:#2b7fff;color:white;font-weight:bold;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+<h1>đźš€ AF Bootloader v0.2</h1>
+<p>Operator â€˘ Synteza â€˘ RozwĂłj</p>
+<input placeholder="đźŽŻ WprowadĹş Obiekt Analizy">
+</div>
+
+<div class="orbital">
+<div class="mirror">đźŞž LUSTERKA</div>
+<div class="ring2"></div>
+<div class="ring1"></div>
+
+<div class="node c">đźš€ TOR C<br>RozwĂłj</div>
+<div class="node a">đź› ď¸Ź TOR A<br>JakoĹ›Ä‡</div>
+<div class="center">đźŽŻ<br>OBIEKT<br>ANALIZY</div>
+<div class="node b">âť¤ď¸Ź TOR B<br>WpĹ‚yw</div>
+<div class="node hot">đź”Ą PUNKT<br>GORÄ„CY</div>
+</div>
+
+<div class="grid">
+<div class="card"><h2>đź› ď¸Ź Tor A</h2><textarea rows="6"></textarea></div>
+<div class="card"><h2>âť¤ď¸Ź Tor B</h2><textarea rows="6"></textarea></div>
+<div class="card"><h2>đźš€ Tor C</h2><textarea rows="6"></textarea></div>
+<div class="card"><h2>âšˇ Synteza</h2><textarea rows="6"></textarea></div>
+</div>
+
+<div class="card" style="margin-top:15px">
+<h2>âś… Walidacja</h2>
+<button>PotwierdĹş wynik</button>
+<button>Wymaga rewizji</button>
+</div>
+</div>
+</body>
+</html>
