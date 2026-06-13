@@ -1,6 +1,7 @@
-<img src="assets/logo.png" class="logo">
-BałiUniwersum (BU)
-System Ponad Chaosem (SPCh)
+<img src="assets/logo.png" class="logo">Akcelerator Framework
+BałiUniwersum
+System Ponad Chaosem
+
 
 ## AF Knowledge Engine
 
