@@ -1,4 +1,6 @@
 # 🚀 Akcelerator Framework (AF)
+BałiUniwersum (BU)
+System Ponad Chaosem (SPCh)
 
 ## AF Knowledge Engine
 
