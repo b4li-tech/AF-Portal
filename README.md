@@ -1,6 +1,8 @@
-<img src="assets/logo.png" class="logo">Akcelerator Framework
-BałiUniwersum
-System Ponad Chaosem
+<img src="assets/logo.png" class="logo">
+
+<h1>AKCELERATOR FRAMEWORK</h1>
+<h2>BałiUniwersum</h2>
+<h3>System Ponad Chaosem</h3>
 
 
 ## AF Knowledge Engine

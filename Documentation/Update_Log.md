@@ -17,3 +17,9 @@
 - utworzono bazową strukturę portalu
 - utworzono bibliotekę wiedzy AF Knowledge Engine
 - rozpoczęto rozwój systemu online
+## AF Knowledge Engine v0.2
+
+- dodano globalne menu nawigacyjne
+- połączono moduły systemu
+- utworzono pierwszą bibliotekę wiedzy
+- rozpoczęto integrację portalu z dokumentacją

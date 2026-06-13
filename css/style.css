@@ -110,3 +110,24 @@ nav a:hover{
     width:120px;
     height:auto;
 }
+h1{
+    margin:10px 0;
+    color:white;
+}
+
+h2{
+    margin:5px 0;
+    color:#66ccff;
+}
+
+h3{
+    margin:5px 0 20px 0;
+    color:#cccccc;
+    font-style:italic;
+}
+
+.logo{
+    width:120px;
+    height:auto;
+    margin-bottom:15px;
+}
