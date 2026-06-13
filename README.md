@@ -1,4 +1,4 @@
-# 🚀 Akcelerator Framework (AF)
+<img src="assets/logo.png" class="logo">
 BałiUniwersum (BU)
 System Ponad Chaosem (SPCh)
 

@@ -106,3 +106,7 @@ nav a{
 nav a:hover{
     background:#1f2937;
 }
+.logo{
+    width:120px;
+    height:auto;
+}
